@@ -1,0 +1,66 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2024-08-20T19:30:05.794Z",
+        "line": 9,
+        "name": "Verify that new user can create account successfully with proper details",
+        "description": "",
+        "id": "creating-account-on-luma;verify-that-new-user-can-create-account-successfully-with-proper-details;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 31258000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "\u0027Admin\u0027 is at Singup page of Luma",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027Admin\u0027",
+                  "offset": 0
+                }
+              ],
+              "location": "stepDefinitions.MainStepDefinition.is_at_singup_page_of_luma(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4148000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User enters all the details and Clicked on Create account buttom",
+            "match": {
+              "location": "stepDefinitions.MainStepDefinition.user_enters_all_the_details_and_clicked_on_create_account_buttom()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 30000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User\u0027s account get created and message displayed.",
+            "match": {
+              "location": "stepDefinitions.MainStepDefinition.user_s_account_get_created_and_message_displayed()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Creating account on Luma",
+    "description": "",
+    "id": "creating-account-on-luma",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/createAccount.feature",
+    "tags": []
+  }
+]
