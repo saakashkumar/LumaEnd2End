@@ -1,60 +1,73 @@
 [
   {
-    "line": 1,
+    "line": 2,
     "elements": [
       {
-        "start_timestamp": "2024-08-21T03:22:16.172Z",
-        "line": 3,
-        "name": "Verify that new user can create account successfully with proper details",
+        "start_timestamp": "2024-08-21T20:43:56.662Z",
+        "line": 4,
+        "name": "Validate user with valid user id and password is able to login and search any items and add to cart",
         "description": "",
-        "id": "creating-account-on-luma;verify-that-new-user-can-create-account-successfully-with-proper-details",
+        "id": "user-should-be-able-to-login-and-search-items-and-able-to-add-them-into-card.;validate-user-with-valid-user-id-and-password-is-able-to-login-and-search-any-items-and-add-to-cart",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 11473000000,
+              "duration": 9390000000,
               "status": "passed"
             },
-            "line": 4,
-            "name": "User is at Singup page of Luma",
+            "line": 5,
+            "name": "User is at login page",
             "match": {
-              "location": "stepDefinitions.MainStepDefinition.user_is_at_singup_page_of_luma()"
+              "location": "stepDefinitions.AddToCart.user_is_at_login_page()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 4154000000,
+              "duration": 2142000000,
               "status": "passed"
             },
-            "line": 5,
-            "name": "User enters all the details and Clicked on Create account buttom",
+            "line": 6,
+            "name": "User enter username and password and click on submit",
             "match": {
-              "location": "stepDefinitions.MainStepDefinition.user_enters_all_the_details_and_clicked_on_create_account_buttom()"
+              "location": "stepDefinitions.AddToCart.user_enter_username_and_password_and_click_on_submit()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 38000000,
               "status": "passed"
             },
-            "line": 6,
-            "name": "User\u0027s account get created and message displayed.",
+            "line": 7,
+            "name": "Home page is opened and search box is open",
             "match": {
-              "location": "stepDefinitions.MainStepDefinition.user_s_account_get_created_and_message_displayed()"
+              "location": "stepDefinitions.AddToCart.home_page_is_opened_and_search_box_is_open()"
             },
             "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@addtocart"
           }
         ]
       }
     ],
-    "name": "Creating account on Luma",
+    "name": "User should be able to login and search items and able to add them into card.",
     "description": "",
-    "id": "creating-account-on-luma",
+    "id": "user-should-be-able-to-login-and-search-items-and-able-to-add-them-into-card.",
     "keyword": "Feature",
-    "uri": "file:src/test/java/features/createAccount.feature",
-    "tags": []
+    "uri": "file:src/test/java/features/addToCart.feature",
+    "tags": [
+      {
+        "name": "@addtocart",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
   }
 ]

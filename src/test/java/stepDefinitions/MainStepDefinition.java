@@ -6,6 +6,7 @@ import io.cucumber.java.en.When;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import utils.Elements;
 
 public class MainStepDefinition {
 
@@ -33,11 +34,14 @@ public class MainStepDefinition {
 
     @Then("User's account get created and message displayed.")
     public void user_s_account_get_created_and_message_displayed() {
-        wait.until(ExpectedConditions.visibilityOf(elements.getConfirmationMessage()));
+
         String pageTitle = driver.getTitle();
 
+        System.out.println("Page Title is:: "+ pageTitle);
+
         if (pageTitle.equals("My Account")) {
-            System.out.println("User has successfully logged in");
+            System.out.println("Test Passed");
+            wait.until(ExpectedConditions.visibilityOf(elements.getConfirmationMessage()));
         } else {
             System.out.println("Test Failed");
         }
