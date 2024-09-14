@@ -7,7 +7,7 @@ import io.cucumber.testng.CucumberOptions;
         glue = "stepDefinitions",
 
         monochrome = true,
-        tags = "@addtocart",
+        tags = "@SCC",
         plugin = {
           "pretty", // Pretty console output
           "html:target/cucumber-reports.html",

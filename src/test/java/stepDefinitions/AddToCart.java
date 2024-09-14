@@ -33,8 +33,10 @@ public class AddToCart {
         String userName= driver.findElement(By.xpath("/html/body/div[2]/header/div[1]/div/ul/li[1]/span")).getText();
         System.out.println("User has logged in successfully and name:- "+ userName + " displayed");
     }
+
     @Then("Home page is opened and search box is open")
     public void home_page_is_opened_and_search_box_is_open() {
+
 
     }
 }

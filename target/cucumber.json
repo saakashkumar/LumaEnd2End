@@ -1,73 +1,83 @@
 [
   {
-    "line": 2,
+    "line": 1,
     "elements": [
       {
-        "start_timestamp": "2024-08-21T20:43:56.662Z",
-        "line": 4,
-        "name": "Validate user with valid user id and password is able to login and search any items and add to cart",
+        "start_timestamp": "2024-09-14T20:53:10.875Z",
+        "line": 13,
+        "name": "Get all the usrls in list",
         "description": "",
-        "id": "user-should-be-able-to-login-and-search-items-and-able-to-add-them-into-card.;validate-user-with-valid-user-id-and-password-is-able-to-login-and-search-any-items-and-add-to-cart",
+        "id": "to-get-all-the-urls-at-a-particular-table;get-all-the-usrls-in-list;;2",
         "type": "scenario",
-        "keyword": "Scenario",
+        "keyword": "Scenario Outline",
         "steps": [
           {
             "result": {
-              "duration": 9390000000,
+              "duration": 9583000000,
               "status": "passed"
             },
-            "line": 5,
-            "name": "User is at login page",
+            "line": 4,
+            "name": "I login at SCC Portal",
             "match": {
-              "location": "stepDefinitions.AddToCart.user_is_at_login_page()"
+              "location": "stepDefinitions.GetAllUrlsSCC.i_login_at_SCC_portal()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 2142000000,
+              "duration": 1848000000,
               "status": "passed"
             },
-            "line": 6,
-            "name": "User enter username and password and click on submit",
+            "line": 5,
+            "name": "Navigate to Handouts",
             "match": {
-              "location": "stepDefinitions.AddToCart.user_enter_username_and_password_and_click_on_submit()"
+              "location": "stepDefinitions.GetAllUrlsSCC.nevigate_to_handouts()"
             },
-            "keyword": "When "
+            "keyword": "And "
           },
           {
             "result": {
+              "duration": 271000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Select the \u0027Semester IV\u0027",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\u0027Semester IV\u0027",
+                  "offset": 11
+                }
+              ],
+              "location": "stepDefinitions.GetAllUrlsSCC.select_the_semester(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 12838000000,
               "status": "passed"
             },
             "line": 7,
-            "name": "Home page is opened and search box is open",
+            "name": "I get all the links for downloads and download files",
             "match": {
-              "location": "stepDefinitions.AddToCart.home_page_is_opened_and_search_box_is_open()"
+              "location": "stepDefinitions.GetAllUrlsSCC.i_get_all_the_links_for_downloads()"
             },
             "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@addtocart"
+            "name": "@SCC"
           }
         ]
       }
     ],
-    "name": "User should be able to login and search items and able to add them into card.",
+    "name": "To get all The URLS at a particular Table",
     "description": "",
-    "id": "user-should-be-able-to-login-and-search-items-and-able-to-add-them-into-card.",
+    "id": "to-get-all-the-urls-at-a-particular-table",
     "keyword": "Feature",
-    "uri": "file:src/test/java/features/addToCart.feature",
-    "tags": [
-      {
-        "name": "@addtocart",
-        "type": "Tag",
-        "location": {
-          "line": 1,
-          "column": 1
-        }
-      }
-    ]
+    "uri": "file:src/test/java/features/getAllUrls.feature",
+    "tags": []
   }
 ]
